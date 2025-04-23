@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="16.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.TodoController">
+   <children>
+
+      <!-- Title Label -->
+      <Label alignment="CENTER" prefHeight="13.0" prefWidth="600.0" text="My To-Do List" textFill="#abcfee">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+
+      <!-- Buttons Row -->
+      <HBox alignment="CENTER" spacing="16.0">
+         <children>
+            <Button onAction="#onCreateClick" prefHeight="18.0" prefWidth="150.0" text="Add Task" textFill="#2868a4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+
+            <Button onAction="#onDeleteClick" prefHeight="29.0" prefWidth="150.0" text="Delete Selected" textFill="#2d69a1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+
+      <!-- Todo List -->
+      <ListView fx:id="todoList" prefHeight="241.0" prefWidth="600.0">
+      </ListView>
+      <HBox alignment="CENTER" prefHeight="0.0" prefWidth="600.0">
+         <children>
+            <Button alignment="CENTER" onAction="#onClearAllClick" prefHeight="0.0" prefWidth="150.0" text="Clear All" textFill="#206bbc">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+
+   </children>
+</VBox>
