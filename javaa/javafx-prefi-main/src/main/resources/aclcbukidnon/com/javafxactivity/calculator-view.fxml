@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="293.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aclcbukidnon.com.javafxactivity.controllers.CalculatorController">
+   <!-- Display -->
+   <HBox prefHeight="80" prefWidth="76.0">
+      <children>
+         <Label fx:id="display" contentDisplay="RIGHT" prefWidth="270.0" style="-fx-background-color: #ffffff; -fx-padding: 10; -fx-border-color: #ccc; -fx-border-radius: 5;" text="0">
+            <font>
+               <Font name="Consolas Bold" size="32.0" />
+            </font>
+         </Label>
+      </children>
+      <effect>
+         <DropShadow />
+      </effect>
+   </HBox>
+
+   <!-- Number Pad & Operations -->
+   <VBox spacing="8">
+      <HBox spacing="8">
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="7" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="8" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="9" />
+         <Button onAction="#handleButtonAction" styleClass="op-btn" text="+" />
+      </HBox>
+      <HBox spacing="8">
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="4" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="5" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="6" />
+         <Button onAction="#handleButtonAction" styleClass="op-btn" text="-" />
+      </HBox>
+      <HBox spacing="8">
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="1" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="2" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="3" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="0" />
+      </HBox>
+      <HBox spacing="8">
+         <Button onAction="#handleButtonAction" styleClass="op-btn" text="*" />
+         <Button onAction="#handleButtonAction" styleClass="op-btn" text="/" />
+         <Button onAction="#handleButtonAction" styleClass="calc-btn" text="." />
+         <Button onAction="#handleButtonAction" styleClass="eq-btn" text="=" />
+      </HBox>
+   </VBox>
+
+   <!-- Scientific Functions -->
+   <VBox spacing="8" style="-fx-padding: 10 0 0 0;">
+      <HBox spacing="8">
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="sin" />
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="cos" />
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="tan" />
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="√" />
+      </HBox>
+      <HBox spacing="8">
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="log" />
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="ln" />
+         <Button onAction="#handleButtonAction" styleClass="sci-btn" text="^" />
+         <Button onAction="#handleScientificFunction" styleClass="sci-btn" text="π" />
+      </HBox>
+   </VBox>
+
+   <!-- Utility Buttons -->
+   <HBox alignment="CENTER" spacing="10" style="-fx-padding: 10 0 0 0;">
+      <Button onAction="#handleButtonAction" prefWidth="140" styleClass="util-btn" text="CLEAR" />
+      <Button onAction="#handleButtonAction" prefWidth="140" styleClass="util-btn" text="&lt;---" />
+   </HBox>
+</VBox>

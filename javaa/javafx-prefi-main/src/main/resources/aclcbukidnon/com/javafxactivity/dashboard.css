@@ -1,0 +1,101 @@
+
+/* Background Gradient */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #3a7bd5, #00d2ff);
+}
+
+/* Container Styling */
+.bottom {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+/* Button Styles */
+.nav-button {
+    -fx-background-color: linear-gradient(to right, #3a7bd5, #00d2ff);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 2, 2);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.nav-button:hover {
+    -fx-background-color: linear-gradient(to right, #00d2ff, #3a7bd5);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0.7, 2, 2);
+}
+
+/* Active/Pressed Button Style */
+.nav-button:pressed {
+    -fx-background-color: linear-gradient(to right, #ff6a00, #ee0979);
+    -fx-scale-x: 1.0;
+    -fx-scale-y: 1.0;
+    -fx-effect: none;
+}
+
+/* General Font Style */
+.root .button {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+/* calculator*/
+.calc-btn, .op-btn, .sci-btn, .eq-btn, .util-btn {
+    -fx-font-size: 16px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 45px;
+    -fx-background-radius: 8;
+    -fx-background-color: #e0e0e0;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8;
+}
+
+.op-btn {
+    -fx-background-color: #ffd54f;
+}
+
+.eq-btn {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+}
+
+.sci-btn {
+    -fx-background-color: #90caf9;
+}
+
+.util-btn {
+    -fx-font-size: 14px;
+    -fx-background-color: #ef5350;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+/* counter*/
+.counter-button {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #3a7bd5;
+    -fx-pref-height: 60px;
+    -fx-pref-width: 60px;
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+.counter-button:hover {
+    -fx-background-color: #0053ba;
+}
+
+.counter-label {
+    -fx-font-size: 80px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 120px;
+    -fx-alignment: center;
+    -fx-text-fill: #333;
+}
+
